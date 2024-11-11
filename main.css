@@ -1,0 +1,171 @@
+main{
+    background-color: #000;
+}
+.carouselImage{
+    height: 75vh;
+    width: 100vw;
+}
+
+.aboutSection{
+    padding: 1.4em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center center;
+}
+
+.aboutSection>div{
+    width: 40vw;
+    color: #fff;
+}
+.title{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.about{
+    text-align: center;
+    font-size: 1em;
+}
+.aboutTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutImage{
+    width: 100%;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    place-items: center center;
+    padding: 2em;
+}
+.menuSection{
+    width: 20vw;
+    height: 250px;
+    box-shadow: #00000059 0px 5px 15px;
+    padding: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menuSection:hover{
+    transform: scale(0.8);
+    transition: 0.5s ease;
+}
+.coffeeMenu{
+    background-image: url(./Images/Menu/service1.jpg);
+    /* opacity: 0.4; */
+    width: 100%;
+}
+
+.resturantMenu{
+    background-image: url(./Images/Menu/service2.jpg);
+    /* opacity: 0.4; */
+    width: 100%;
+}
+
+.menuContainer{
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    height: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuContainer>span{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+}
+.menuicon, .menuTitle{
+    color: #fff;
+}
+
+.dishesContainer{
+    padding: 1.4em;
+}
+.dishesheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1.3em;
+}
+.dishes-btn-container{
+    padding: 20px;
+    display: flex;
+    gap: 1.4em;
+}
+.dishes-btn-container>button{
+    padding: 8px 20px;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px;
+    border-color: goldenrod;  
+}
+.dishes-title{
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+}
+.all-button{
+    background-color: aquamarine;
+}
+
+.food-Item{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 25vw;
+    /* height: 25vh; */
+}
+
+.food-Item-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #fff;
+    place-items: center center;
+}
+.item-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.itemImage{
+    height: 30vh;
+    width: 30vw;
+}
+.reviews{
+    background-image: url(../Images/Carousels/Banner-2.jpg);
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center center;
+    gap: 20px;
+}
+.reviewcard{
+    background-color: #000;
+    height: 300px;
+    width: 22vw;
+    color: #fff;
+    padding: 1.2em;
+}
+.reviewcard>div{
+    padding: 0.8em;
+}
+.profile{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.person{
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
