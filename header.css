@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
 }
 
 nav {
@@ -46,6 +50,14 @@ nav>a:hover {
 
 #checkbox {
     display: none;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
 }
 
 @media screen and (max-width:550px) {

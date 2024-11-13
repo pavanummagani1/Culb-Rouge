@@ -101,12 +101,20 @@ main{
     display: flex;
     gap: 1.4em;
 }
-.dishes-btn-container>button{
+.dishes-btn-container>span{
     padding: 8px 20px;
-    background-color: transparent;
+    background-color: black;
     color: #fff;
     border-radius: 8px;
+    border: 2px solid;
     border-color: goldenrod;  
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #fff;
 }
 .dishes-title{
     font-size: 2em;
@@ -121,11 +129,22 @@ main{
     display: flex;
     flex-direction: row;
     gap: 1em;
-    width: 25vw;
-    /* height: 25vh; */
+    width: 30vw;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
+.food-Item:hover{
+    border: 2px solid goldenrod;
+    transition: border 0.5s ease;
+}
+.foodTitle{
+    font-size: 1.3em;
+    font-weight: 700;
+}
 .food-Item-container{
+    margin: 20px 0px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -136,20 +155,33 @@ main{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    width: 50%;
+    height: 80%;
 }
 .itemImage{
     height: 30vh;
-    width: 30vw;
+    width: 50%;
+}
+.reviewContainer{
+    background-image: url(../Images/Carousels/Banner-2.jpg);
+    text-align: center;
+}
+.reviewhead{
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: bold;
 }
 .reviews{
-    background-image: url(../Images/Carousels/Banner-2.jpg);
     padding: 2em;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     place-items: center center;
     gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .reviewcard{
+    border-radius: 5px;
     background-color: #000;
     height: 300px;
     width: 22vw;
