@@ -202,7 +202,46 @@ a:hover{
     gap: 1.2em;
 }
 
-@media screen and (max-width:550px) {
+@media screen and (min-width:900px) and (max-width:1199px){
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+    }
+    .reviewcard{
+        width: 30vw;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:900px) {
+    .aboutSection{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center center;
+    }
+    .aboutTitle{
+        order: 1;
+    }
+    .food-Item-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+    .food-Item{
+        width: 40vw;
+        height: 40vh;
+    }
+    .reviews{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+    .reviewcard{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width:650px) {
     .carousel{
         height: 30vh;
     }
